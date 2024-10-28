@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magyar Tavak</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    header {
+      background-image: url(img/beach.jpg);
+      display: flex;
+      background-size: cover;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      background-image: url(img/strand.jpg);
+      background-size: cover;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+    <div class="container">
+        <header></header>
+
+        <aside>
+          <nav>
+            <ul>
+                <li><a href="#section1">Balaton</a></li>
+                <li><a href="#section2">Tisza-tó</a></li>
+                <li><a href="#section3">Szelidi-tó</a></li>
+            </ul>
+          </nav>
+
+
+          <div class="form-container">
+            <p>Kérem töltse ki a jelentkezési űrlapot</p>
+            <form>
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="lake">Melyik tó érdekli?</label>
+                <select id="lake" name="lake" required>
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza-to">Tisza-tó</option>
+                    <option value="szelidi-to">Szelidi-tó</option>
+                </select>
+
+                <label for="accommodation">Milyen szállást keres?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="accommodation" value="szalloda"> Szálloda</label>
+                    <label><input type="checkbox" name="accommodation" value="apartman"> Apartmanház</label>
+                    <label><input type="checkbox" name="accommodation" value="kemping"> Kemping</label>
+                </div>
+
+                <label>Milyen ellátás legyen?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="meal" value="teljes" required> Teljes panzió</label>
+                    <label><input type="radio" name="meal" value="fel"> Fél panzió</label>
+                    <label><input type="radio" name="meal" value="reggeli"> Csak reggeli</label>
+                    <label><input type="radio" name="meal" value="nincs"> Nem kérek ellátást</label>
+                </div>
+
+                <label for="message">Egyéb üzenet:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Mehet</button>
+            </form>
+          </div>
+        </aside>
+
+        <section id="section1" class="section1">
+          <img src="img/balaton.jpg" alt="Balaton" class="lake-image">
+          <p>
+            A Balaton Magyarország legnagyobb tava, amelyet gyakran „magyar tengerként” emlegetnek. 
+            Ez a népszerű üdülőhely mind a hazai, mind a külföldi turisták körében közkedvelt. 
+            A tó körüli városok, mint Siófok, Balatonfüred és Keszthely, számos szálláslehetőséget és programot kínálnak. 
+            A Balaton partján élvezhetőek a homokos strandok, a csónakázás, és a számos vízi sport. 
+            Emellett a tó környéke híres borvidékeiről és kulturális eseményeiről is. 
+            A Balaton-felvidék vulkanikus hegyei és gyönyörű tájai egyedülálló látványt nyújtanak. Az éves Balaton Sound fesztivál több ezer látogatót vonz. 
+            A tó vízhőmérséklete nyáron kellemesen meleg, ami ideális a fürdőzéshez. 
+          </p>
+        </section>
+
+        <section id="section2" class="section2">
+          <img src="img/tisza-to.jpg" alt="Tisza-tó" class="lake-image">
+          <p>
+            A Tisza-tó Magyarország második legnagyobb tava, amely mesterségesen jött létre a Tisza folyó szabályozásával. 
+            Ez a tó ideális hely a természet szerelmeseinek, mivel a tó körül kialakított természetvédelmi területek rendkívül gazdag növény- és állatvilágnak adnak otthont. 
+            A Tisza-tónál kajakozással, kerékpározással és horgászattal is eltölthetik az időt a látogatók. A tó különleges szigetei és homokos partjai kiválóak a kikapcsolódásra. 
+            A Poroszlói Ökocentrum pedig interaktív kiállításokkal várja az érdeklődőket. 
+            A Tisza-tó az aktív turizmus egyik központja, ahol a vízi sportok széles skáláját próbálhatjuk ki. Az itt található termálfürdők és wellness lehetőségek népszerűek a pihenni vágyók körében is. 
+            Az évente megrendezett Tisza-tó fesztivál színes programokat kínál. 
+            A helyi halászlé és egyéb gasztronómiai különlegességek kihagyhatatlanok. 
+          </p>
+        </section>
+
+        <section id="section3" class="section3">
+          <img src="img/szelidi-to.jpg" alt="Szelidi-tó" class="lake-image">
+          <p>
+            A Szelidi-tó egy kisebb, de gyönyörű tó Magyarországon, amely elsősorban a családias hangulatáról és nyugodt környezetéről ismert. 
+            Ez a tó kedvelt hely a csendes pihenést keresők számára. 
+            A Szelidi-tónál főként kempingezési lehetőségek vannak, de kisebb panziók és apartmanok is elérhetőek. 
+            A tó vize természetes úton melegszik fel, így különösen kellemes nyári időszakban a fürdőzésre. 
+            A környék sok túraútvonallal és kerékpárúttal rendelkezik. 
+            A tó partján lévő szórakozóhelyek és bárok élénk éjszakai életet biztosítanak. 
+            A Szelidi-tó kiváló választás azoknak, akik szeretnék elkerülni a nagyobb üdülőhelyek zaját. 
+            Az itteni természetes környezet és a vidéki táj különösen vonzó a látogatók számára. 
+          </p>
+        </section>
+
+        <footer></footer>
+    </div>
+</body>
+</html>
